@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+form{
+    background-color: white;
+    padding: 1vw;
+    margin-top: 3vh;
+    width: 90vw;
+    border-radius: 10px;
+    align-self: center;
+    font-family: Arial;
+}
+
+input{
+    border-style: solid;
+    border-color: "gray";
+    border-width: 1px;
+    
+}
+
+fieldset{
+    border-color: pink;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 2vw;
+    margin-top: 3vh;
+}
+
+#output{
+    background-color: white; 
+    border-radius: 10px;
+    font-family: Arial;
+    line-height: 30px;
+}
+
+#resetBtn{
+    margin-top: 3vh;
+    margin-left: 2vw;
+}

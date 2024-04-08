@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return print()">
+        <fieldset id="questions">
+            <legend>Althea Nicole's Form</legend>
+            <label for="name">Name</label></br>
+            <input id="name" type="text" name="name" onblur="checkName()"> </br> </br>
+
+            <label for="username">Username</label></br>
+            <input id="username" type="text" name="username" onblur="checkUsername()"> </br> </br>
+
+            <label for="pass">Password</label></br>
+            <input id="pass" type="password" name="pass" onblur="checkPass()"> </br> </br>
+
+            <label for="email">Email</label></br>
+            <input id="email" type="email" name="email" onblur="checkEmail()"> </br> </br>
+
+            <label for="address">Address</label></br>
+            <input id="address" type="text" name="address" onblur="checkAddress()"> </br> </br>
+
+            <label for="sex">Sex</label> </br>
+            <select name="sex" id="sex">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Prefer not to mention.">Prefer not to mention.</option>
+            </select> </br></br>
+
+            <label for="interests">What are your interests?</label></br>
+            <textarea id="interests" name="interests" rows="15" cols="50" onblur="checkInterests()"></textarea> </br></br> 
+
+            <button id="submitBtn" type="submit">Submit</button>
+        </fieldset>
+        <fieldset id="printed">
+            <legend>Results</legend>
+            <p id="output"></p>
+        </fieldset>
+
+        <button id="resetBtn" type="reset" onclick="clearOutput()">Reset</button>
+        
+    </form>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</body>
+</html>
